@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉcoLinux - Pour une informatique durable</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo">
+            <img src="../img/logo-small.jpg" alt="Logo ÉcoLinux">
+            <h1>ÉcoLinux</h1>
+        </div>
+        <nav>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="pourquoi-linux.html">Pourquoi Linux?</a></li>
+                <li><a href="ewaste.html">E-waste & Windows</a></li>
+                <li><a href="economie-energie.html">Économie d'énergie</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Linux : <span class="highlight">La solution écologique</span> pour une informatique durable</h2>
+                <p>Découvrez comment Linux contribue aux Objectifs de Développement Durable en réduisant les déchets électroniques et la consommation d'énergie.</p>
+                <div class="cta-buttons">
+                    <a href="pourquoi-linux.html" class="cta-button">Découvrir</a>
+                    <a href="#odd-section" class="cta-button secondary">Les ODD concernés</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../img/logo-linux-big.png" alt="Linux et développement durable">
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Pourquoi choisir Linux pour l'environnement?</h2>
+            <div class="features-grid">
+                <div class="feature-card" id="card1">
+                    <img src="../img/logo-ewaste.jpg" alt="Réduction des déchets électroniques">
+                    <h3>Réduction des déchets électroniques</h3>
+                    <p>Linux fonctionne sur du matériel plus ancien, prolongeant la durée de vie des appareils et réduisant les déchets électroniques.</p>
+                </div>
+                <div class="feature-card" id="card2">
+                    <img src="../img/logo-energy.png" alt="Économie d'énergie">
+                    <h3>Économie d'énergie</h3>
+                    <p>Des utilitaires systèmeset applications optimisés qui consomment moins d'énergie et prolongent l'autonomie de la batterie.</p>
+                </div>
+                <div class="feature-card" id="card3">
+                    <img src="../img/logo-gnu.png" alt="Logiciel libre et durable">
+                    <h3>Logiciel libre et durable</h3>
+                    <p>Un modèle de développement durable qui privilégie la réutilisation et l'amélioration continue.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="odd-section" class="odd-section">
+            <h2>Contribution aux Objectifs de Développement Durable</h2>
+            <div class="odd-grid">
+                <div class="odd-card">
+                    <img src="../img/ODD-12.png" alt="ODD 12">
+                    <h3>ODD 12: Consommation et production responsables</h3>
+                    <p>Linux favorise une utilisation plus longue du matériel informatique, réduisant ainsi la consommation de ressources.</p>
+                </div>
+                <div class="odd-card">
+                    <img src="../img/ODD-13.png" alt="ODD 13">
+                    <h3>ODD 13: Mesures relatives à la lutte contre les changements climatiques</h3>
+                    <p>La réduction de la consommation énergétique contribue à diminuer l'empreinte carbone du secteur informatique.</p>
+                </div>
+                <div class="odd-card">
+                    <img src="../img/ODD-9.png" alt="ODD 9">
+                    <h3>ODD 9: Industrie, innovation et infrastructure</h3>
+                    <p>L’utilisation de Linux encourage le développement de solutions technologiques ouvertes, durables et innovantes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Témoignages d'utilisateurs</h2>
+            <div class="testimonial-slider" id="testimonialSlider">
+                <div class="testimonial active">
+                    <blockquote>"Depuis que j'ai installé Linux sur mon ancien ordinateur portable, il fonctionne comme neuf et la batterie dure deux fois plus longtemps!"</blockquote>
+                    <cite>Marie D., étudiante</cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>"Notre entreprise a économisé des milliers d'euros en matériel informatique en migrant vers Linux, tout en réduisant notre impact environnemental."</blockquote>
+                    <cite>Thomas L., responsable IT</cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>"Je pensais devoir jeter mon PC de 2015, mais grâce à Linux, il est parfaitement fonctionnel pour mes besoins quotidiens."</blockquote>
+                    <cite>Sophie M., graphiste</cite>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button id="prevTestimonial" aria-label="Témoignage précédent">❮</button>
+                <button id="nextTestimonial" aria-label="Témoignage suivant">❯</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../img/logo-small.jpg" alt="Logo ÉcoLinux">
+                <h3>ÉcoLinux</h3>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="pourquoi-linux.html">Pourquoi Linux?</a></li>
+                    <li><a href="ewaste.html">E-waste & Windows</a></li>
+                    <li><a href="economie-energie.html">Économie d'énergie</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Efrei - Adrian NOYES et Pascal CHEN</p>
+                <p>Projet TI402 - 2024/2025</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
