@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-waste & Windows - ÉcoLinux</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo">
+            <img src="../img/logo-small.jpg" alt="Logo ÉcoLinux">
+            <h1>ÉcoLinux</h1>
+        </div>
+        <nav>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pourquoi-linux.html">Pourquoi Linux?</a></li>
+                <li><a href="ewaste.html" class="active">E-waste & Windows</a></li>
+                <li><a href="economie-energie.html">Économie d'énergie</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>La problématique du <span class="highlight">E-waste</span></h2>
+            <p>Comment la fin du support de Windows 10 et les exigences matérielles de Windows 11 contribuent à l'augmentation des déchets électroniques.</p>
+        </section>
+
+        <section class="alert-section">
+            <div class="alert">
+                <h3>Alerte E-waste</h3>
+                <p><strong>Windows 10 : fin du support le 14 octobre 2025</strong></p>
+                <p>Des millions d'ordinateurs fonctionnels pourraient devenir obsolètes à cause de l'arrêt du support de Windows 10 et des exigences matérielles élevées de Windows 11.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="content-image">
+                <img src="../img/ewaste-big.jpg" alt="Déchets électroniques">
+            </div>
+            <div class="content-text">
+                <h3>La crise croissante des déchets électroniques</h3>
+                <p>Les déchets électroniques (e-waste) représentent le flux de déchets qui connaît la croissance la plus rapide au monde. Selon les Nations Unies, nous générons plus de 50 millions de tonnes de déchets électroniques chaque année, et seulement 20% sont recyclés correctement.</p>
+                <p>Cette situation est exacerbée par les cycles de renouvellement technologique de plus en plus courts imposés par les grandes entreprises technologiques, et Microsoft n'échappe pas à cette tendance avec sa politique de fin de support pour Windows 10.</p>
+            </div>
+        </section>
+
+        <section class="content-section alternate">
+            <div class="content-text">
+                <h3>Windows 11 : des exigences matérielles controversées</h3>
+                <p>Windows 11 impose des exigences matérielles sans précédent qui excluent de nombreux ordinateurs parfaitement fonctionnels:</p>
+                <ul>
+                    <li>Processeur : 1 GHz ou plus rapide avec 2 cœurs ou plus sur un processeur compatible 64 bits</li>
+                    <li>RAM : 4 Go ou plus</li>
+                    <li>TPM : version 2.0</li>
+                    <li>UEFI compatible avec le démarrage sécurisé</li>
+                </ul>
+                <p>Ces exigences, particulièrement celle du TPM 2.0, rendent des millions d'ordinateurs inéligibles à la mise à niveau – même des appareils relativement récents et performants.</p>
+            </div>
+            <div class="content-image">
+                <img src="../img/win11-compat.png" alt="Configuration requise Windows 11">
+            </div>
+        </section>
+
+        <section class="comparison-section">
+            <h3>Comparaison des exigences matérielles</h3>
+            <div class="comparison-table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Système</th>
+                            <th>Processeur</th>
+                            <th>RAM</th>
+                            <th>Espace disque</th>
+                            <th>Autres exigences</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Windows 11</td>
+                            <td>1 GHz, 2 cœurs, 64 bits ET <a href=https://aka.ms/CPUlist>dans la liste des processeurs approuvés</a></td>
+                            <td>4 Go</td>
+                            <td>64 Go</td>
+                            <td>TPM 2.0, UEFI, Secure Boot, Internet, DirectX12, un écran 720p 9" minimum, WDDM 2.0, un compte microsoft</td>
+                        </tr>
+                        <tr>
+                            <td>Ubuntu 24.04</td>
+                            <td>1 GHz</td>
+                            <td>2 Go</td>
+                            <td>25 Go</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Linux Mint</td>
+                            <td>1 GHz</td>
+                            <td>1 Go (2 Go recommandé)</td>
+                            <td>15 Go</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Lubuntu</td>
+                            <td>700 MHz</td>
+                            <td>512 Mo</td>
+                            <td>10 Go</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="calculator-section" id="calculator-section">
+            <h3>Calculateur d'impact environnemental</h3>
+            <p>Estimez l'impact environnemental du remplacement de vos ordinateurs au lieu de les réutiliser avec Linux.</p>
+            
+            <div class="calculator">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="computerCount">Nombre d'ordinateurs :</label>
+                        <input type="number" id="computerCount" value="10" min="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="computerType">Type d'ordinateur :</label>
+                        <select id="computerType">
+                            <option value="desktop">Ordinateur de bureau</option>
+                            <option value="laptop" selected>Ordinateur portable</option>
+                        </select>
+                    </div>
+                    <button id="calculateBtn" class="cta-button">Calculer l'impact</button>
+                </div>
+                <div class="calculator-results" id="calculatorResults">
+                    <h4>Impact environnemental estimé</h4>
+                    <div class="result-item">
+                        <span>CO2 émis pour la production :</span>
+                        <span id="co2Result">1500 kg</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Eau utilisée :</span>
+                        <span id="waterResult">1000000 litres</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Matières premières :</span>
+                        <span id="materialsResult">3000 kg</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Équivalent en arbres à planter :</span>
+                        <span id="treesResult">75</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <h3>Donnez une seconde vie à vos ordinateurs avec Linux</h3>
+            <p>Au lieu de remplacer vos ordinateurs "incompatibles" avec Windows 11, considérez Linux comme une alternative écologique et économique.</p>
+            <div class="cta-buttons">
+                <a href="economie-energie.html" class="cta-button">Découvrir l'économie d'énergie</a>
+                <a href="#calculator-section" class="cta-button secondary">Calculer votre impact</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../img/logo-small.jpg" alt="Logo ÉcoLinux">
+                <h3>ÉcoLinux</h3>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="pourquoi-linux.html">Pourquoi Linux?</a></li>
+                    <li><a href="ewaste.html">E-waste & Windows</a></li>
+                    <li><a href="economie-energie.html">Économie d'énergie</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Efrei - Adrian NOYES et Pascal CHEN</p>
+                <p>Projet TI402 - 2024/2025</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
