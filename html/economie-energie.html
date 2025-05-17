@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Économie d'énergie - ÉcoLinux</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo">
+            <img src="../img/logo-small.jpg" alt="Logo ÉcoLinux">
+            <h1>ÉcoLinux</h1>
+        </div>
+        <nav>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pourquoi-linux.html">Pourquoi Linux?</a></li>
+                <li><a href="ewaste.html">E-waste & Windows</a></li>
+                <li><a href="economie-energie.html" class="active">Économie d'énergie</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2><span class="highlight">Économie d'énergie</span> avec Linux</h2>
+            <p>Comment Linux optimise la consommation énergétique de votre matériel et contribue à réduire votre empreinte carbone.</p>
+        </section>
+
+        <section class="content-section">
+            <div class="content-image">
+                <img src="../img/ewaste-big.webp" alt="Économie d'énergie">
+            </div>
+            <div class="content-text">
+                <h3>Des systèmes optimisés pour l'efficacité énergétique</h3>
+                <p>Linux est reconnu pour son efficacité énergétique supérieure par rapport à Windows. Cette différence s'explique par plusieurs facteurs techniques :</p>
+                <ul>
+                    <li>Une charge système (overhead) plus faible qui nécessite moins de ressources avec moins d'applications et service inutiles comme les pubs ou le tracking</li>
+                    <li>Une meilleure gestion des processus en arrière-plan grâce au scheduler amélioré</li>
+                    <li>Des environnements de bureau légers qui consomment moins de ressources</li>
+                    <li>Des pilotes matériels optimisés pour l'efficacité énergétique et intégrés dans le kernel</li>
+                </ul>
+                <p>Ces optimisations se traduisent directement par une consommation électrique réduite pour tous les ordinateurs et une durée de vie de batterie prolongée pour les ordinateurs portables.</p>
+            </div>
+        </section>
+
+        <section class="content-section alternate">
+            <div class="content-text">
+                <h3>Le problème du mode veille sous Windows</h3>
+                <p>De nombreux utilisateurs de Windows 10 et 11 rapportent des problèmes récurrents avec le mode veille. Parmi les problèmes les plus courants :</p>
+                <ul>
+                    <li>Ordinateurs portables qui surchauffent dans un sac alors qu'ils sont supposés être en veille</li>
+                    <li>Batterie qui se vide complètement pendant la nuit en mode veille</li>
+                    <li>Processus en arrière-plan qui réveillent régulièrement l'ordinateur</li>
+                    <li>Mises à jour forcées qui sortent l'ordinateur du mode veille</li>
+                </ul>
+                <p>Ce comportement erratique contraste fortement avec la gestion efficace de l'énergie sous Linux, où le mode veille profonde fonctionne de manière fiable et prévisible.</p>
+            </div>
+            <div class="content-image">
+                <img src="../img/thinkpad.webp" alt="Problèmes de veille Windows">
+            </div>
+        </section>
+
+        <section class="power-tools-section">
+            <h3>Outils de gestion d'énergie sous Linux</h3>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="/api/placeholder/120/120" alt="TLP">
+                    <h4>TLP</h4>
+                    <p>Un outil puissant qui optimise automatiquement les paramètres d'économie d'énergie sans nécessiter de configuration manuelle complexe, pour rendre Linux encore plus efficient.</p>
+                </div>
+                <div class="tool-card">
+                    <img src="/api/placeholder/120/120" alt="PowerTop">
+                    <h4>PowerTop</h4>
+                    <p>Développé par Intel, cet outil analyse la consommation d'énergie et fournit des recommandations pour améliorer l'autonomie de la batterie pour une analyse approfondie de la batterie, de sa santé et de son usage.</p>
+                </div>
+                <div class="tool-card">
+                    <img src="/api/placeholder/120/120" alt="cpufreq">
+                    <h4>CPU Frequency Scaling</h4>
+                    <p>Permet d'ajuster dynamiquement la fréquence du processeur en fonction de la charge de travail, réduisant considérablement la consommation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="benchmark-section">
+            <h3>Comparaison des performances énergétiques</h3>
+            <div class="chart-container">
+                <canvas id="energyChart"></canvas>
+            </div>
+            <div class="benchmark-text">
+                <p>Des tests indépendants ont montré que les ordinateurs portables sous Linux peuvent bénéficier d'une autonomie jusqu'à 40% supérieure par rapport à Windows 11 sur le même matériel.</p>
+                <p>Cette économie d'énergie est particulièrement prononcée sur les appareils plus anciens, où les optimisations de Linux pour du matériel moins puissant font une différence significative.</p>
+            </div>
+        </section>
+
+        <section class="energy-savings-calculator" id="energy-savings-calculator">
+            <h3>Calculateur d'économies d'énergie</h3>
+            <p>Estimez combien vous pourriez économiser en termes d'énergie et d'émissions de CO2 en passant à Linux.</p>
+            
+            <div class="calculator">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="computerUsage">Heures d'utilisation par jour :</label>
+                        <input type="number" id="computerUsage" value="8" min="1" max="24">
+                    </div>
+                    <div class="form-group">
+                        <label for="computerCount">Nombre d'ordinateurs :</label>
+                        <input type="number" id="computerCount" value="1" min="1">
+                    </div>
+                    <button id="calculateEnergySavings" class="cta-button">Calculer les économies</button>
+                </div>
+                <div class="calculator-results" id="energySavingsResults">
+                    <h4>Économies annuelles estimées</h4>
+                    <div class="result-item">
+                        <span>Électricité économisée :</span>
+                        <span id="electricityResult">438 kWh</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Réduction de CO2 :</span>
+                        <span id="co2SavingsResult">175 kg</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Économies financières :</span>
+                        <span id="financialResult">87 €</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <h3>Conseils pour optimiser davantage</h3>
+            <div class="tips-container">
+                <div class="tip">
+                    <h4>Choisir un environnement de bureau léger</h4>
+                    <p>Des environnements comme XFCE, LXDE ou MATE consomment beaucoup moins de ressources et donc d'énergie que les interfaces graphiques plus lourdes.</p>
+                </div>
+                <div class="tip">
+                    <h4>Optimiser les paramètres du disque dur</h4>
+                    <p>Configurer la mise en veille du disque dur lorsqu'il n'est pas utilisé peut significativement réduire la consommation d'énergie.</p>
+                </div>
+                <div class="tip">
+                    <h4>Ajuster la luminosité de l'écran</h4>
+                    <p>Linux offre des contrôles précis pour réduire automatiquement la luminosité de l'écran lorsque l'ordinateur fonctionne sur batterie.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <h3>Réduisez votre empreinte carbone numérique</h3>
+            <p>Passez à Linux pour une informatique plus responsable et économe en énergie, tout en contribuant activement aux Objectifs de Développement Durable.</p>
+            <div class="cta-buttons">
+                <a href="a-propos.html" class="cta-button">À propos de notre projet</a>
+                <a href="#energy-savings-calculator" class="cta-button secondary">Calculer vos économies</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../img/logo-small.jpg" alt="Logo ÉcoLinux">
+                <h3>ÉcoLinux</h3>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="pourquoi-linux.html">Pourquoi Linux?</a></li>
+                    <li><a href="ewaste.html">E-waste & Windows</a></li>
+                    <li><a href="economie-energie.html">Économie d'énergie</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Efrei - Adrian NOYES et Pascal CHEN</p>
+                <p>Projet TI402 - 2024/2025</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
