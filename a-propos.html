@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - ÉcoLinux</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo">
+            <img src="../img/logo-small.jpg" alt="Logo ÉcoLinux">
+            <h1>ÉcoLinux</h1>
+        </div>
+        <nav>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pourquoi-linux.html">Pourquoi Linux?</a></li>
+                <li><a href="ewaste.html">E-waste & Windows</a></li>
+                <li><a href="economie-energie.html">Économie d'énergie</a></li>
+                <li><a href="a-propos.html" class="active">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>À propos de ce <span class="highlight">projet</span></h2>
+            <p>Découvrez notre équipe et l'origine de ce projet sur la promotion de Linux pour un développement durable.</p>
+        </section>
+
+        <section class="project-info-section">
+            <div class="project-image">
+                <img src="../img/logo-big.jpg" alt="Projet ÉcoLinux">
+            </div>
+            <div class="project-text">
+                <h3>Notre projet</h3>
+                <p>Ce site web a été développé dans le cadre du projet de programmation Web (TI402) de l'Efrei pour l'année académique 2024-2025.</p>
+                <p>Notre objectif est de sensibiliser à l'impact environnemental de l'informatique et de promouvoir Linux comme une solution durable, en ligne avec les Objectifs de Développement Durable (ODD) des Nations Unies.</p>
+                <p>Ce projet s'inscrit particulièrement dans le cadre des objectifs suivants :</p>
+                <ul>
+                    <li><strong>ODD 12:</strong> Consommation et production responsables</li>
+                    <li><strong>ODD 13:</strong> Mesures relatives à la lutte contre les changements climatiques</li>
+                    <li><strong>ODD 9:</strong> Industrie, innovation et infrastructure</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h3>Notre équipe</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="../img/photo-adrian.webp" alt="Photo d'Adrian">
+                    <h4>Adrian NOYES</h4>
+                    <p class="role">Chef de projet</p>
+                    <p>Responsable de la coordination du projet, de la conception initiale et de la rédaction des contenus sur la problématique du e-waste. Responsable des fonctionnalités interactives, des calculateurs et de l'animation du site, du design responsive</p>
+                </div>
+                <div class="team-member">
+                    <img src="../img/photo-pascal.webp" alt="Photo de Pascal">
+                    <h4>Pascal CHEN</h4>
+                    <p class="role">Développeur Frontend</p>
+                    <p>En charge du développement HTML/CSS de base et du mockup de l'interface utilisateur.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="methodology-section">
+            <h3>Notre méthodologie</h3>
+            <div class="methodology-content">
+                <div class="methodology-text">
+                    <p>Pour réaliser ce projet, nous avons suivi un processus de développement structuré :</p>
+                    <ol>
+                        <li><strong>Recherche préliminaire :</strong> Collecte d'informations sur l'impact environnemental des systèmes d'exploitation et les avantages écologiques de Linux.</li>
+                        <li><strong>Conception UX/UI :</strong> Élaboration de wireframes et de la charte graphique du site.</li>
+                        <li><strong>Développement frontend :</strong> Implémentation des pages HTML et du style CSS avec une approche mobile-first.</li>
+                        <li><strong>Intégration JavaScript :</strong> Ajout de fonctionnalités interactives et de calculateurs d'impact environnemental.</li>
+                        <li><strong>Tests et optimisations :</strong> Vérification de la compatibilité, validation W3C et optimisation des performances.</li>
+                    </ol>
+                </div>
+                <div class="methodology-image">
+                    <img src="../img/methodologie-2.webp" alt="Processus de développement">
+                </div>
+            </div>
+        </section>
+
+        <section class="technologies-section">
+            <h3>Technologies utilisées</h3>
+            <div class="technologies-grid">
+                <div class="technology">
+                    <img src="../img/logo-html.jpg" alt="HTML5">
+                    <h4>HTML5</h4>
+                    <p>Structure sémantique et accessible</p>
+                </div>
+                <div class="technology">
+                    <img src="../img/logo-css.png" alt="CSS3">
+                    <h4>CSS3</h4>
+                    <p>Styles, animations et responsive design</p>
+                </div>
+                <div class="technology">
+                    <img src="../img/logo-js.png" alt="JavaScript">
+                    <h4>JavaScript</h4>
+                    <p>Interactivité et fonctionnalités dynamiques</p>
+                </div>
+                <div class="technology">
+                    <img src="../img/logo-git.png" alt="Git">
+                    <h4>Git</h4>
+                    <p>Gestion de versions collaborative</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h3>Nous contacter</h3>
+            <p>Vous avez des questions, des suggestions ou vous souhaitez contribuer à notre projet? N'hésitez pas à nous contacter.</p>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet :</label>
+                    <select id="subject" name="subject">
+                        <option value="question">Question</option>
+                        <option value="suggestion">Suggestion</option>
+                        <option value="collaboration">Votre site est le moins bon</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        S'inscrire à la newsletter pour suivre nos prochains projets
+                    </label>
+                </div>
+                <button type="submit" class="cta-button">Envoyer</button>
+            </form>
+            <div id="formConfirmation" class="form-confirmation hidden">
+                <p>Merci pour votre message! Nous vous répondrons dans les plus brefs délais.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../img/logo-small.jpg" alt="Logo ÉcoLinux">
+                <h3>ÉcoLinux</h3>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="pourquoi-linux.html">Pourquoi Linux?</a></li>
+                    <li><a href="ewaste.html">E-waste & Windows</a></li>
+                    <li><a href="economie-energie.html">Économie d'énergie</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Efrei - Adrian NOYES et Pascal CHEN</p>
+                <p>Projet TI402 - 2024/2025</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
